@@ -1,0 +1,33 @@
+.nav-bar {
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.nav-bar-name {
+    margin-right: auto;
+}
+
+.nav-bar>li {
+    margin-left: 25px;
+}
+
+.nav-bar-line {
+    border-bottom: 1px solid grey;
+}
+
+.carousel {
+    margin-top: 2rem;
+}
+
+.buy-btn {
+    margin-left: 42.5rem;
+    margin-top: 2rem;
+    height: 50px;
+    width: 100px;
+}
+
+.profile {
+    height: 40px;
+}

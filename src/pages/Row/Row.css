@@ -1,0 +1,101 @@
+.row {
+    margin: 20px;
+    color: #fff;
+}
+
+.row_posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar {
+    display: none;
+}
+
+.row_poster {
+    object-fit: contain;
+    width: 100%;
+    max-height: 500px;
+    transition: transform 450ms;
+    margin-right: 10px;
+}
+
+.new-page-border {
+    height: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: linear-gradient(90deg, white 0%, #121212 50%);
+}
+
+
+
+.row_poster:hover {
+    transform: scale(1.08);
+    -webkit-filter: brightness(30%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.row_posterLarge {
+    max-height: 250px;
+}
+
+.row_posterLarge:hover {
+    transform: scale(1.09);
+}
+
+.row_posterInnerWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.row_posterInnerWrapper.row_posterLarge {
+    max-height: 250px;
+}
+
+.row_posterInnerWrapper:hover .buyTicketsButton {
+    display: block;
+}
+
+.row_posterInnerWrapper:hover .movie-title {
+    display: block;
+}
+
+
+.row_posterInnerWrapper:hover.row_posterLarge .buyTicketsButton {
+    display: block;
+}
+
+.movie-title {
+    font-size: 14px;
+    color: white;
+    display: none;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: #ff9900;*/
+    cursor: pointer;
+}
+
+
+.buyTicketsButton {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background-color: #ff9900;*/
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    border-radius: 4px;
+}
